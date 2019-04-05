@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>任务二</title>
+</head>
+<body>
+    <style type="text/css">
+        *{
+           margin:0px 0px;
+           padding: 0px;}
+        body {
+           background-color: rgba(177, 209, 236, 0.863)}  
+        h4{
+            color: bisque;
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        span{
+           color: teal;
+           font-size: 12px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        p{
+            margin-top:9px;
+            color:rgb(21, 21, 31);
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        section{
+            background-color: rgb(248, 245, 245);
+            border-width: 5px;
+            border-style: groove;
+            border-color: rgba(192, 248, 174, 0.829);
+            border-right: 5px solid rgb(224, 167, 167);
+            border-bottom: 5px solid rgb(155, 216, 210);
+            padding: 30px;
+            margin-top: 30px;
+            margin-bottom: 20px;}
+        .heading_nav a:visited,.heading_nav a:link{
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;}
+        .heading_nav a:hover,.heading_nav a:active{
+            color: rgb(70, 130, 219);}
+        
+        .heading_nav ul li{
+            float: left;
+            padding-left: 20px;}
+        .heading_nav ul li a span{
+            color: grey;}
+        .pics{
+           text-align: center;
+           border-style: groove;
+           border-width: 0.5px;
+           border-color: rgb(223, 120, 180);
+           margin-bottom: 20px;
+           max-width: 440px;
+           max-height: 460px;}
+        .pics span{
+            font-size: 20px;}
+        #table{
+            font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+            width:100%;
+            border-collapse:collapse;}
+        #table td{
+            font-size:1em;
+            border:1px solid rgb(152, 191, 33);
+            padding:3px 7px 2px 7px;}
+        
+        .form_left{
+            width: 40%;
+            text-align: right;
+            margin: 15px auto;
+            display: inline-block;
+            margin-right: 10px;} 
+        .form_right{
+            display: inline-block;
+            vertical-align: middle;}
+    </style>
+<div>
+    <div style="width: 100%;height: 70px;background-color: rgb(165, 165, 243);margin: 0px auto">
+        <div class="heading_nav">
+            <img style=" width: 60px;border-radius: 50%" src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg" alt="">
+        <ul style="float: right;font-size: 18px;margin-bottom: 20px;margin-top: 20px;margin-right: 20px;list-style: none">
+            <li><a href="http://www.w3school.com.cn">导航链接1</a></li>
+            <li><a href="http://www.w3school.com.cn">导航链接2</a></li>
+            <li><a href="http://www.w3school.com.cn">导航链接3</a></li>
+            <li><a href="http://www.w3school.com.cn">导航链接4</a></li>
+        </ul>
+        </div>
+    </div>
+    <article style="width: 90%;margin: 0px auto;margin-top: 40px;background-color: rgba(177,209,236,0.863)">
+        <section>
+            <header>
+              <h2>文章一级标题</h2>
+              <h4>文章二级标题</h4>
+              <span>文章作者  文章发表时间</span>
+            </header>
+            <p style="border-top-style:dashed">
+            这是一段废话，这是一段废话，这是一段废话，这是一段废话，
+            这是一段废话，这是一段废话，这是一段废话，这是一段废话，
+            好像需要换行了<br />但这还是一段废话，什么也没有改变。所以继续打废话。
+           <a href="https://home.firefoxchina.cn/">这里要求需要一个链接</a>
+           这是一篇文章，很长的文章，这是一篇文章，很长的文章，这是一篇文章，很长的文章，这是一篇文章，很长的文章，
+           这是一篇文章，很长的文章，这是一篇文章，很长的文章，这是一篇文章，很长的文章。
+           此处应有一张图，等一下，图还没找到！
+           <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg" alt="a dog"
+          width="100" height="100" />
+          这是一段废话，这是一段废话，这是一段废话，这是一段废话。学长挖坑，据说这里应该换行<br />
+          这还是一段废话，这还是一段废话，<strong>猝不及防这里变成了粗体字</strong>。再打一句废话，<a href="https://home.firefoxchina.cn/">这里有个链接</a><br />
+          这段废话,至此结束,想换个行<br />
+          </p>
+        </section>
+        <section>
+            <header>
+               <h2>另一篇文章一级标题</h2>
+               <h4>文章二级标题</h4>
+               <span>文章作者  文章发表时间</span>
+            </header>
+             <p>
+               相似的废话又来了，这是一段废话，这是一段废话，这是一段废话。此处应有一个链接：<a href="https://home.firefoxchina.cn/">连接到这里https://home.firefoxchina.cn/</a>
+               <br />换个行。<br />前面的小黑点是装饰还是自动生成的？等下，加个图。
+               <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg"  alt="a dog"  width="100" height="100" />
+               出现了新的东西
+               <ul style="margin:20px 80px 20px 80px">
+                 <li>这是项目列表1</li>
+                 <li>项目列表2</li>
+                 <li>项目列表3</li>
+               </ul>
+             </p>
+            </section>
+            <section class="body_pic">
+                <h2>图片</h2>
+                <div style="margin-left: 40px;">
+                    <div class="pics">
+                        <span style="color: chartreuse">据说这是一张好看的图片</span>
+                        <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg"  alt="a dog" width="400" height="380" ></div>
+                    <div class="pics">
+                        <span style="color:violet">据说这是一张好看的图片</span>
+                        <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg"  alt="a dog" width="400" height="380" ></div>
+                    <div class="pics">
+                        <span style="color:rgb(89, 21, 153)">据说这是一张好看的图片</span>
+                        <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg" alt="a dog" width="400" height="380" ></div>
+                    <div class="pics">
+                        <span style="color:rgb(21, 152, 212)">据说这是一张好看的图片</span>
+                        <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg" alt="a dog"  width="400" height="380" ></div>
+                    <div class="pics">
+                        <span style="color:rgb(206, 85, 37)">据说这是一张好看的图片</span><br />
+                        <img src="http://imgsrc.baidu.com/forum/pic/item/99d987efce1b9d16d402e67bfddeb48f8d546486.jpg"  alt="a dog" width="400" height="380" ></div>
+                </div>
+            </section>
+    <section>
+        <header>
+            <h2>最后一篇文章一级标题</h4>
+            <h4>文章二级标题</h4>
+             <span>文章作者  文章发表时间</span>
+            <ol style="margin:20px 20px 20px 40px">
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <ol start="17" style="margin:20px 20px 30px 50px"> 
+               <li>张三</li>
+               <li>李四</li>
+               <li>王五</li>
+            </ol>
+        <table border="1"  id="table">
+            <tr style="font-size:1em; border:1px solid rgb(167, 202, 59); padding:3px 7px 2px 7px;
+                      text-align:left; background-color:rgb(167, 201, 66);color:rgb(255, 255, 255)">
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+            <tr>
+                <td>表内容</td>
+                <td>表内容</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>表内容</td>
+                <td>表内容</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>表内容</td>
+                <td>表内容</td>
+                <td>操作</td>
+            </tr>
+            <tr style="background-color: rgba(206, 241, 149, 0.863)">
+                <td>总计</td>
+                <td colspan="2">11111</td><!--合并列数-->
+            </tr>
+        </table>
+    </section>
+    <section>
+    <aside>
+    <header>
+        <h2>这里是侧栏注册窗口标题！</h2>
+    </header>
+    <form style="width: 100%;margin: 10px auto" action="">
+        <div class="tablerow">
+            <label class="form_left">请输入邮箱地址</label>
+            <input type="text" name="文本输入框">
+        </div>
+        <div>
+            <p class="form_left"></p>
+            <p class="form_right"><span>邮箱地址请按照格式输入</span></p>
+        </div>
+        <div class="tablerow">
+            <label class="form_left">请输入密码</label>
+            <input type="password" name="psw">
+        </div>
+        <div class="tablerow">
+            <label class="form_left">请重复输入密码</label>
+            <input type="password" name="psw">
+        <div>
+            <p class="form_left"></p>
+            <p class="form_right"><span>密码请为6～16英文数字</span></p>
+        </div>
+        <div class="tablerow">
+            <label class="form_left">性别</label>
+            <label for="boy">男</label>
+            <input type="radio" name="sex" id="boy">
+            <label for="girl">女</label>
+            <input type="radio" name="sex" id="girl">
+        </div>
+        <div class="tablerow">
+            <label class="form_left">年龄</label>
+            <input type="number" name="quantity" min="10" max="60">
+        </div>
+        <div class="tablerow">
+            <label class="form_left">爱好</label>
+            <input type="checkbox" id="tiyu">
+            <label for="tiyu">体育</label>
+            <input type="checkbox" id="art">
+            <label for="art">艺术</label>
+            <input type="checkbox" id="sci">
+            <label for="sci">科学</label>
+        </div>
+        <div>
+        个人描述:
+        <textarea name="" id="" cols="80" rows="7" ></textarea>
+        </div>
+        <div>
+            <input type="submit" value="确认提交" style="font-size: 20px;width:1100px;background-color:rgb(114, 194, 231);border: none;border-radius: 4px;color: rgb(228, 133, 24);text-align: center">
+        </div>
+    </form>
+</aside>
+</section>
+</article>
+    <footer style="font-family:arial; width: 100%; height:50px;background-color: rgb(240, 146, 146);
+    text-align: center;font-weight: bold">
+    <p>版权 &copy; </p>
+    </footer>
+</body>
+</html>
+
+
