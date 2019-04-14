@@ -37,14 +37,14 @@ var aqiData = [
 
 var paiming=['一','二','三','四'];
 aqiData.sort(function(a,b){
-    return b[1]-a[1];})
+    return b[1]-a[1];})/*降序*/
 for(var i=0;i<aqiData.length;i++){
-    if(aqiData[i][1]>60){
-    var list = document.getElementById('aqi-list');
-        result = document.createTextNode('第'+paiming[i]+'名：'+aqiData[i][0]+'，'+aqiData[i][1]);
-        li = document.createElement('li');
-        li.appendChild(result);
-        list.appendChild(li);}
+    if(aqiData[i][1]>60)/*筛选*/{
+    var list = document.getElementById('aqi-list');/*取列表节点*/
+        result = document.createTextNode('第'+paiming[i]+'名：'+aqiData[i][0]+'，'+aqiData[i][1]);/*创建文本节点*/
+        li = document.createElement('li');/*创建列表项节点*/
+        li.appendChild(result);/*将文本内容添加到列表项中*/
+        list.appendChild(li);}/*将列表项添加到列表中*/
     }
  
 }
