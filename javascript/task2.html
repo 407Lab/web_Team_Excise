@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+      <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100],
+  ["重庆", 70],
+  ["温州", 63],
+  ["japan", 84],
+  ["四川", 92]
+];
+
+(function () {
+
+  /*
+  在注释下方编写代码
+  遍历读取aqiData中各个城市的数据
+  将空气质量指数大于60的城市显示到aqi-list的列表中
+  */
+
+  // 筛选出指数大于60的城市
+  const indexNum = 1
+  const limitedIndex = 60
+
+  // 筛选出空气指数大于60的城市
+  let filterDataList = aqiData.filter(function(item) {
+    return item[indexNum] > limitedIndex
+  })
+
+  // 对筛选出的城市进行降序排序
+  let sortDataList = filterDataList.sort(function(a, b) {
+    return b[indexNum] - a[indexNum]
+  })
+
+  // 将城市列表添加到aqi-list dom节点中
+  let addDataToList = function() {
+    const indexName = 0
+    const indexVal = 1
+    const ulNode = document.querySelector('#aqi-list')
+
+    // 遍历数组， 将内容添加到新建的li标签中， 并将li标签添加到ul节点中
+    sortDataList.forEach((item, index) => {
+      const liNode = document.createElement('li')
+      liNode.innerHTML = `第${index + 1}名: ${item[indexName]}, ${item[indexVal]}`
+      ulNode.appendChild(liNode)
+    })
+  }
+
+  addDataToList()
+
+})();
+</script>
+</body>
+</html>

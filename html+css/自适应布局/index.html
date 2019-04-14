@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>auto</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0 ;
+      }
+
+      header {
+        height: 160px;
+        background-color: gray;
+      }
+
+      #pagewrapper {
+        width: 980px;
+        margin: 0 auto;
+      }
+
+      #container {
+        float: left;
+        width: 600px;
+        background-color: aquamarine;
+      }
+
+      #sidebar {
+        float: right;
+        width: 280px;
+        background-color: violet;
+      }
+
+      footer {
+        clear: both;
+        background-color: beige;
+      }
+    </style>
+    <link rel="stylesheet" href="mediaquery.css">
+  </head>
+  <body>
+    <div id="pagewrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">home</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="container">
+        <article>
+          this is some artical
+          <img src="http://pic.58pic.com/58pic/15/68/59/71X58PICNjx_1024.jpg" alt="" srcset="">
+        </article>
+      </div>
+      <aside id="sidebar">
+        <section>
+          this is some widget
+        </section>
+      </aside>
+      <footer>
+        footer
+      </footer>
+    </div>
+  </body>
+</html>

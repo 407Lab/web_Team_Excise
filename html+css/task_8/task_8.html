@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex-box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+
+        .flex-container{
+            position: relative;
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+            align-content: space-between;
+            margin: auto;
+            max-width: 1000px;
+            height: 300px;
+            border: 1px solid gray;
+            padding: 20px;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            align-content: space-between;
+        }
+        .flex-item1{
+            border: 1px solid red;
+            width: 150px;
+            height: 120px;
+        }
+        .flex-item2{
+            border: 1px solid red;
+            width: 150px;
+            height: 100px;
+        }
+        .flex-item3{
+            border: 1px solid red;
+            width: 150px;
+            height: 40px;
+        }
+        .flex-item4{
+            border: 1px solid blue;
+            width: 150px;
+            height: 200px;
+        }
+        @media all and (max-width:640px){
+            .flex-container{
+            position: relative;
+            margin: auto;
+            height: 300px;
+            max-width: 1000px;
+            border: 1px solid gray;
+            padding: 20px;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap; /* 可换行 */
+            align-content: space-between;
+        }
+        .flex-item4{
+            border: 1px solid blue;
+            width: 150px;
+            height: 200px;
+            order: -1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item1"></div>
+        <div class="flex-item2"></div>
+        <div class="flex-item3"></div>
+        <div class="flex-item4"></div>
+    </div>
+    <a href="https://codeload.github.com/douban/douban-client/legacy.zip/master"
+        download="">点击下载</a>
+    </body>
+    <script>
+        // window.onload = function () {
+        //     window.open("https://codeload.github.com/douban/douban-client/legacy.zip/master")
+        //     console.log('ok!!')
+        // }
+</script>
+</html>
